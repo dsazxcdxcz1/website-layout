@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  overflow-x: hidden;
+}
+
+header {
+  background-image: url('img/Slider.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.logoWrapper {
+  padding: 1rem 5vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logoWrapper img {
+  max-width: 120px;
+  height: auto;
+}
+
+.logoWrapper i {
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+
+.place {
+  font-family: 'Inter', sans-serif;
+  padding-top: clamp(4rem, 15vh, 18rem);
+  padding-left: 5vw;
+  color: white;
+}
+
+.headerContainer {
+  padding-top: 2rem;
+  padding-left: 5vw;
+  color: white;
+  max-width: 600px;
+}
+
+.headerContainer h1 {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 700;
+  font-size: clamp(2rem, 6vw, 4rem);
+}
+
+.headerContainer p {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  margin-top: 1rem;
+  line-height: 1.5;
+}
+
+.headerContainer button {
+  background: none;
+  border: none;
+  margin-top: 2rem;
+  cursor: pointer;
+  color: rgba(255, 215, 35, 1);
+  font-size: 1.2rem;
+}
+
+.TextTitle {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 700;
+  font-size: clamp(2rem, 6vw, 4rem);
+  color: rgba(77, 83, 60, 1);
+  padding: 5rem 5vw 2rem;
+  max-width: 900px;
+}
+
+.DeationContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between;
+  padding: 2rem 5vw;
+}
+
+.container {
+  flex: 1 1 250px;
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+}
+
+.container h1 {
+  color: rgba(77, 83, 60, 1);
+  font-size: 1.5rem;
+}
+
+.container p {
+  margin: 1rem 0;
+  color: rgba(33, 56, 66, 0.6);
+  line-height: 1.4;
+}
+
+.btnDeation {
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: rgba(212, 214, 212, 1);
+  font-size: 1rem;
+}
+
+.deationActiove {
+  color: rgba(255, 215, 35, 1);
+}
+
+.lastPage {
+  padding: 8rem 5vw;
+  background-color: white;
+  color: rgba(77, 83, 60, 1);
+  font-size: clamp(2rem, 5vw, 3rem);
+  max-width: 1200px;
+  margin: 2rem auto 0;
+}
+
+.lastPage button {
+  color: rgba(212, 214, 212, 1);
+  border: none;
+  background: none;
+  font-size: 1rem;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.footerContainer {
+  background-color: rgba(79, 85, 61, 1);
+}
+
+.infoContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 5rem 5vw;
+}
+
+.info h3 {
+  color: rgba(182, 193, 151, 1);
+}
+
+.info h2 {
+  color: white;
+  font-size: 15px;
+  font-family: 'Merriweather', serif;
+  margin-top: 1rem;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 2rem 5vw;
+  color: white;
+  font-size: 1rem;
+}
+
+.containerFooter {
+  color: rgba(182, 193, 151, 1);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-top: 2rem;
+}
+
+.containerFooter p {
+  cursor: pointer;
+}
+
+.webovio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 5rem 5vw;
+  color: rgba(181, 192, 150, 1);
+  text-align: center;
+}
+
+.contactEmailText {
+  max-width: 300px;
+  font-size: 1.2rem;
+}
+
+.email {
+  color: white;
+  font-size: 2rem;
+  word-break: break-word;
+}
+
+.socalMedia {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  padding-top: 1rem;
+}
+
+.bxl {
+  cursor: pointer;
+  background-color: rgba(68, 74, 52, 1);
+  padding: 10px 15px;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+
+.bxl:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .headerContainer,
+  .place,
+  .TextTitle {
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+
+  .headerContainer h1 {
+    font-size: 2rem;
+  }
+
+  .TextTitle {
+    font-size: 2rem;
+  }
+
+  .lastPage {
+    padding: 4rem 5vw;
+    font-size: 2rem;
+  }
+
+  .footer {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .DeationContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logoWrapper {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .webovio img {
+    width: 50%;
+  }
+
+  .contactEmailText {
+    font-size: 0.9rem;
+  }
+
+  .email {
+    font-size: 1.5rem;
+  }
+}
